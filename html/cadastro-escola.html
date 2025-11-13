@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librinho - Cadastro Escola</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="../img/panda-logo.svg" alt="Logo Librinho" class="logo-small">
+      <h2>Acessar conta</h2>
+      
+      <form id="cadastroFormEscola">
+        <div class="input-group">
+          <label for="cnpjEscola">CNPJ</label>
+          <input type="text" id="cnpjEscola" name="cnpjEscola" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+          <label for="emailEscola">Email</label>
+          <input type="email" id="emailEscola" name="emailEscola" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+          <label for="passwordEscola">Senha</label>
+          <input type="password" id="passwordEscola" name="passwordEscola" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPasswordEscola">Confirmar senha</label>
+          <input type="password" id="confirmPasswordEscola" name="confirmPasswordEscola" placeholder="" required>
+        </div>
+
+        <button type="submit" class="btn principal">Cadastrar</button>
+      </form>
+
+      <p class="register-text">
+        Já possui conta? <a href="login-escola.html" class="link-green">Entrar na conta</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1053 @@
+/* ===== Estilo global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #111827;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* ===== Página Inicial ===== */
+.container {
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.subtexto {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.btn.principal {
+  background-color: #7ac142;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.btn.principal:hover {
+  background-color: #6bbf59;
+}
+
+.btn.secundario {
+  background-color: #a8d94f;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  display: inline-block;
+  width: auto;
+  margin: 0 0.5rem;
+}
+
+.btn.secundario:hover {
+  background-color: #99c840;
+}
+
+.ou {
+  color: #374151;
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.texto-login {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.opcoes-login {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* ===== Tela de Inicialização ===== */
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.splash-container {
+  text-align: center;
+}
+
+.splash-title {
+  font-size: 2.2rem;
+  color: #7ac142;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===== Página de Login e Cadastro ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding: 1rem;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+.logo-small {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  background-color: #fafafa;
+}
+
+.input-group input:focus {
+  border-color: #7ac142;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.input-group input::placeholder {
+  color: #d1d5db;
+}
+
+.help-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.link-help {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link-help:hover {
+  color: #7ac142;
+}
+
+.register-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.link-green {
+  color: #7ac142;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.link-green:hover {
+  color: #6bbf59;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
+
+  .logo-small {
+    width: 100px;
+  }
+
+  .splash-title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .login-box {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ========================= exercicios ======================== */
+
+.home-body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1060px;
+  max-height: 100vh;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+  height: auto;
+  object-fit: contain;
+}   
+
+.header-title {
+  font-size: 1.6rem;
+  color: #7ac142;
+  font-weight: 700;
+  margin: 200px;
+  font-style: italic;
+}
+
+.btn-settings {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-settings {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.school-info {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid #7ac142;
+}
+
+.school-badge {
+  font-size: 0.85rem;
+  color: #7ac142;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.unit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.unit-title {
+  font-size: 1.4rem;
+  color: #111827;
+  font-weight: 700;
+  margin: 0;
+}
+
+.unit-description {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0.3rem 0 0 0;
+  font-weight: 500;
+}
+
+.btn-download {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-download {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.letter-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 130px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+
+.letter-card:nth-child(1){ margin-left: -10; }
+.letter-card:nth-child(2){ margin-left: 48px; }
+.letter-card:nth-child(3){ margin-left: 96px; }
+.letter-card:nth-child(4){ margin-left: 112px; }
+.letter-card:nth-child(5){ margin-left: 70px; }
+.letter-card:nth-child(6){ margin-left: 24px; }
+
+
+.letter-card:nth-child(1) .letter-image { transform: rotate(5deg) translateY(-6px); }
+.letter-card:nth-child(2) .letter-image { transform: rotate(2deg) translateY(-4px); }
+.letter-card:nth-child(3) .letter-image { transform: rotate(6deg) translateY(-2px); }
+.letter-card:nth-child(4) .letter-image { transform: rotate(15deg) translateY(4px); }
+.letter-card:nth-child(5) .letter-image { transform: rotate(20deg) translateY(8px); }
+.letter-card:nth-child(6) .letter-image { transform: rotate(20deg) translateY(9px); }
+
+
+.letter-card:hover { transform: scale(1.03); }
+
+
+.letter-label {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -52%);
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.15);
+    pointer-events: none;
+}
+
+.letter-image {
+    width: 105px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform-origin: 50% 20%;
+    transition: transform 0.18s ease;
+}
+
+.letter-card:nth-child(n+4) .letter-image {
+  /* aumenta brilho e saturação levemente para aparência mais clara */
+  filter: brightness(1.5) saturate(1.1);
+}
+
+
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    }
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border-radius: 0.3rem;
+}
+
+.nav-item.active {
+    background-color: #f3f4f6;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: opacity(0.6);
+    transition: filter 0.2s;
+}
+
+.nav-item.active .nav-icon {
+    filter: opacity( 1);
+}
+
+.nav-item:hover .nav-icon {
+    filter: opacity(1);
+}
+
+
+
+
+/* ===================================== Responsividade ============================= */
+@media (max-width: 480px) {
+  .home-body {
+    padding: 0;
+  }
+
+  .home-container {
+    max-width: 100%;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+
+  .header {
+    padding: 1rem 1.2rem;
+  }
+
+  .header-title {
+    font-size: 1.4rem;
+  }
+
+  .school-info {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .school-badge {
+    font-size: 0.8rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .unit-title {
+    font-size: 1.2rem;
+  }
+
+  .unit-description {
+    font-size: 0.85rem;
+  }
+
+    .letter-card:nth-child(n+4) .letter-image {
+        filter: brightness(1.15) saturate(1.03);
+    }
+  .letter-card { width: 120px; height: 110px; }
+  .letter-image { width: 86px; }
+
+  .cards-container { gap: 0.5rem; }
+
+  .letter-label { font-size: 1.7rem; }
+  
+}
+
+
+
+/* ================================= exercicio =================================== */
+.letter-card.completo .letter-image {
+  filter: brightness(0.85) saturate(0.9) !important; /* cor escura — #597434 look */
+}
+
+.letter-card.incompleto .letter-image {
+  filter: brightness(1) saturate(1) !important; /* cor normal — #7AA542 look */
+}
+
+/* Página de exercício (exercicio-d.html) */
+.exercise-body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+
+.exercise-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+
+
+
+}
+
+.exercise-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.letter-stage {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.big-letter-wrap {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    img{
+        pointer-events: none;
+        height: auto;
+        width: 100%;
+    }
+  
+}
+
+.big-letter {
+  font-size: 220px;
+  line-height: 1;
+  color: #7AA542; /* cor padrão da letra */
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Panda posicionado sobre a letra como na imagem */
+.panda-over {
+  position: absolute;
+  width: 120px;
+  top: -18px;
+  left: 62%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* descrição e botão */
+.exercise-desc {
+  color: #374151;
+  margin: 1rem 0 1.6rem;
+  font-weight: 500;
+}
+
+.btn-seguir {
+  max-width: 220px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+#sair-btn{
+    background-color: #FAFAFA;
+    border: 2px solid #7AC142;
+    color: #7AC142;
+}
+
+/* responsividade */
+@media (max-width: 480px) {
+  .big-letter-wrap { width: 200px; height: 200px; }
+  .big-letter { font-size: 170px; }
+  .panda-over { width: 90px; top: -14px; left: 60%; }
+}
+
+.exercise-body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+.exercise-container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+box-shadow:0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.back-btn {
+  color: #7ac142;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #7ac142;
+}
+
+.exercise-header-title {
+  font-size: 1.4rem;
+  color: #7ac142;
+  font-weight: 700;
+  margin: 0;
+  font-style: italic;
+}
+
+.exercise-main {
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.exercise-step-counter {
+  font-size: 0.85rem;
+  color: #7ac142;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.exercise-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.instruction-box {
+  background-color: #f9fafb;
+  border-left: 4px solid #7ac142;
+  padding: 1rem;
+  margin: 1.2rem 0;
+  text-align: left;
+  border-radius: 0.4rem;
+}
+
+.instruction-box p {
+  margin: 0.6rem 0;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hand-image-box {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hand-image {
+  max-width: 400px;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.exercise-result {
+  color: #374151;
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+
+.btn-seguir {
+  max-width: 220px;
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+.letter-stage {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.big-letter-wrap {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-letter {
+  font-size: 220px;
+  line-height: 1;
+  color: #7AA542;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+.panda-over {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: -18px;
+  left: 62%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.celebration-box {
+  display: flex;
+  justify-content: center;
+
+}
+
+.panda-celebration {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.exercise-desc {
+  color: #374151;
+  margin: 1rem 0 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hands-libras-box{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    img{
+        width: 80px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* responsividade */
+@media (max-width: 480px) {
+  .big-letter-wrap {
+    width: 200px;
+    height: 200px;
+  }
+
+  .big-letter {
+    font-size: 170px;
+  }
+
+  .panda-over {
+    width: 90px;
+    top: -14px;
+    left: 60%;
+  }
+
+  .hand-image {
+    width: 150px;
+  }
+
+  .exercise-title {
+    font-size: 1rem;
+  }
+
+  .instruction-box {
+    padding: 0.8rem;
+  }
+
+  .instruction-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ...existing code... */
+
+/* ==================== Página de Downloads ==================== */
+.downloads-container {
+  width: 100%;
+  max-width: 1060px;
+  min-height: 100vh;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.downloads-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.downloads-main {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.downloads-title {
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.downloads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 0.9rem 1rem;
+  border-radius: 0.6rem;
+  border-left: 4px solid #7ac142;
+}
+
+.download-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-title {
+  font-weight: 700;
+  color: #111827;
+}
+
+.download-sub {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .downloads-container { border-radius: 0; }
+  .downloads-title { font-size: 1.05rem; }
+  .download-sub { font-size: 0.9rem; }
+}
+
+/* ==================== Lista de Alunos / Perfil ==================== */
+
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+}
+
+.student-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-left: 4px solid transparent;
+  transition: transform 0.14s, box-shadow 0.14s;
+}
+
+.student-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border-left-color: #7ac142;
+}
+
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.profile-avatar img {
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.chart-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  font-weight: 600;
+  color: #111827;
+}
+
+.student-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.profile-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+/* responsivo */
+@media (max-width:480px) {
+  .profile-avatar img { 
+    width: 100px; 
+    height: 100px;
+  }
+  
+  .student-item img {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .chart-card { padding: 8px; }
+}

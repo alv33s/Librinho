@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sair da Atividade - Librinho</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="exercise-body">
+  <div class="exercise-container">
+    <header class="exercise-header" style="justify-content: center;">
+      <img src="../img/librinho-logo.svg" alt="Librinho Logo">
+    </header>
+
+    <main class="exercise-main">
+        <div class="panda-triste">
+            <img src="../img/panda-triste-exercicio.svg" alt="Panda Triste" class="img-panda-triste">
+        </div>
+
+        <h2 class="exercise-title">Ops! Parece que você saiu da atividade.</h2>
+        <p class="exercise-result-final">Não se preocupe! Você pode continuar de onde parou.</p>
+        <button id="continuar-btn" class="btn principal btn-seguir">Continuar atividade</button>
+        <button id="sair-btn" class="btn principal btn-seguir">Sair da atividade</button>
+        
+    </main>
+
+    <footer class="footer-nav">
+      <a href="./home-aluno.html" class="nav-item"><img src="../img/icon-home.svg" alt="Home" class="nav-icon"></a>
+      <a href="#" class="nav-item"><img src="../img/icon-baixar.svg" alt="Download" class="nav-icon"></a>
+      <a href="#" class="nav-item"><img src="../img/icon-escudo.svg" alt="Proteção" class="nav-icon"></a>
+      <a href="#" class="nav-item"><img src="../img/icon-perfil.svg" alt="Perfil" class="nav-icon"></a>
+    </footer>
+  </div>
+
+  <script src="../js/exercicios.js"></script>
+<script>
+  // Adiciona evento de clique ao botão "Continuar atividade"
+  document.getElementById('continuar-btn').addEventListener('click', function() {
+    window.history.back(); // Volta para a página anterior
+  });
+
+  // Adiciona evento de clique ao botão "Sair da atividade"
+  document.getElementById('sair-btn').addEventListener('click', function() {
+    window.location.href = 'home-aluno.html'; // Redireciona para a home
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil do Aluno - Librinho</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="home-body">
+  <div class="home-container">
+    <header class="header">
+      <a href="lista-alunos.html" class="back-btn" aria-label="Voltar">✕</a>
+      <img src="../img/librinho-logo.svg" alt="Librinho" class="header-logo">
+      <div style="width:36px;"></div>
+    </header>
+
+    <main class="main-content" style="padding-top:0.5rem;">
+      <div class="profile-top" id="profileTop">
+        <div class="profile-avatar" id="profileAvatarWrap">
+          <img src="../img/img-aluno1.svg" alt="Avatar" id="profileAvatar" style="width:120px;height:120px;border-radius:999px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+        </div>
+        <div style="margin-top:16px;text-align:center;">
+          <h2 id="studentName" style="margin-bottom:6px;color:#111827;">Nome do Aluno</h2>
+          <div id="studentMeta" style="color:#6b7280;font-weight:500;font-size:0.9rem;">1º B - Escola Arco-íris</div>
+          <div id="studentDays" style="color:#7AC142;font-weight:600;font-size:0.9rem;margin-top:4px;"></div>
+        </div>
+      </div>
+
+      <section class="profile-stats" style="margin-top:18px;">
+        <div class="chart-card">
+          <svg id="activityChart" width="100%" height="140" viewBox="0 0 360 140" preserveAspectRatio="none"></svg>
+        </div>
+
+        <div class="stats-row" style="margin-top:12px;">
+          <div class="stat-pill">
+            <img src="../img/icon-baixar.svg" alt="" style="width:18px;opacity:0.8;margin-right:8px;">
+            <span id="thisWeekCount">0 atividades</span>
+          </div>
+          <div class="stat-pill" style="margin-left:12px;">
+            <img src="../img/icon-escudo.svg" alt="" style="width:18px;opacity:0.8;margin-right:8px;">
+            <span id="lastWeekCount">0 atividades</span>
+          </div>
+        </div>
+
+        <button id="studyHoursBtn" class="btn principal" style="margin-top:16px;max-width:280px;">0 horas de estudos</button>
+      </section>
+    </main>
+
+    <footer class="footer-nav">
+      <a href="./lista-alunos.html" class="nav-item"><img src="../img/icon-home.svg" alt="Home" class="nav-icon"></a>
+      <a href="./downloads.html" class="nav-item"><img src="../img/icon-baixar.svg" alt="Download" class="nav-icon"></a>
+      <a href="#" class="nav-item"><img src="../img/icon-escudo.svg" alt="Proteção" class="nav-icon"></a>
+      <a href="./perfil-aluno.html" class="nav-item active"><img src="../img/icon-perfil.svg" alt="Perfil" class="nav-icon"></a>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

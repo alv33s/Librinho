@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librinho - Login Aluno</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="../img/panda-logo.svg" alt="Logo Librinho" class="logo-small">
+      <h2>Acessar conta</h2>
+      
+      <form id="loginFormAluno">
+        <div class="input-group">
+          <label for="emailAluno">Email</label>
+          <input type="email" id="emailAluno" name="emailAluno" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+          <label for="passwordAluno">Senha</label>
+          <input type="password" id="passwordAluno" name="passwordAluno" placeholder="" required>
+        </div>
+
+        <button type="submit" class="btn principal">Entrar</button>
+      </form>
+
+      <p class="help-text">
+        <a href="#" class="link-help">Esqueceu a senha?</a>
+      </p>
+      
+      <p class="register-text">
+        Não possui conta? <a href="cadastro-aluno.html" class="link-green">Criar conta</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
